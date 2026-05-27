@@ -1,3 +1,6 @@
+# Pull Request Automation Workflow for Node.js project
+# Updated by eram711
+
 name: Pull Request Automation Workflow
 
 on:
@@ -207,7 +210,7 @@ jobs:
       - name: Verify Test Status
         run: |
           if [ -f test-status.txt ]; then
-            echo "Tests failed."
+            echo "tests failed"
             exit 1
           fi
 
